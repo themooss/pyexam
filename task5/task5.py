@@ -32,6 +32,7 @@ def task5_21404_2():
         if r > 480:
             print(n, r)
             break
+            
 def task5_20896_3():#8
     for n in range(1, 1001):
         b = bin(n)[2:]
@@ -44,6 +45,7 @@ def task5_20896_3():#8
         r = int(b, 2)
         if r > 19:
             print(n, r)
+            
 def task5_23551_4(): #6
     for n in range(1, 1001):
         b = bin(n)[2:]
@@ -55,7 +57,6 @@ def task5_23551_4(): #6
         if r < 30:
             print(n, r)
 
-
 def task5_19237_5(): #222
     for n in range(1, 1001):
         t = sys(n, 3)
@@ -66,4 +67,5 @@ def task5_19237_5(): #222
         r = int(t, 3)
         if r % 2 == 0 and r > 220:
             print(r)
+            
 task5_19237_5()
