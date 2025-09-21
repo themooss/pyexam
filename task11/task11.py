@@ -31,4 +31,25 @@ def task11_19243_4(): # 5.19 -> 6 -> 2^6 = 64(min = 33)
     c = 23_155
     mem = 5536 * 1024 * 8
     print((mem // c) / 377)
-task11_19243_4()
+
+def task11_MMigunov2026_5(): #8
+    a = 31
+    i = 5
+    c = 7_654_321
+    mem = 36 * 1024 * 1024 * 8
+    for n in range(1, 100):
+        if mem <= c * i * n:
+            print(n, mem - c * i * n)
+    print('----')
+    print(mem - c * i * 7)
+    print(mem - c * i * 8)
+
+def task11_23964_6(): #8193
+    l = 12
+    c = 200_000
+    mem = 4 * 1024 * 1024 * 8
+    for i in range(1, 20):
+        if mem >= c * l * i:
+            print(i)
+    print(2 ** 13 + 1)
+task11_23964_6()

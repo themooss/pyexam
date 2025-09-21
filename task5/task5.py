@@ -66,4 +66,27 @@ def task5_19237_5(): #222
         r = int(t, 3)
         if r % 2 == 0 and r > 220:
             print(r)
-task5_19237_5()
+
+def task5_MMigunov2026_6(): #41610
+    res = []
+    for n in range(1, 1235):
+        p = sys(n, 5)
+        if n % 5 == 0:
+            p = sys(sum([int(x) for x in str(n%52)]), 5)+p
+        else:
+            p = p[0] + p
+        r = int(p, 5)
+        res.append(r)
+    print(max(res))
+
+def task5_23958_7(): #7
+    for n in range(1, 1000):
+        b = bin(n)[2:]
+        if n % 4 == 0:
+            b = b + b[:2]
+        else:
+            b = b + bin((n%4) + 1)[2:]
+        r = int(b, 2)
+        if r >= 50:
+            print(n, r)
+task5_23958_7()

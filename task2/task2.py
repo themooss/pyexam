@@ -50,4 +50,24 @@ def task2_19234_5():
                     f = not((not(x) or y) and (not(w))) or not(z and not(y and w))
                     if not f:
                         print(w, x, y, z)
-task2_19234_5()
+
+def task2_MMigunov2026_6(): #wzyx
+    print('w x y z')
+    for w in range(2):
+        for x in range(2):
+            for y in range(2):
+                for z in range(2):
+                    f = not(x <= z) or (w <= (y ==z))
+                    if not f:
+                        print(w, x, y, z)
+
+def task2_23955_7(): #wyzx
+    print('w x y z')
+    for w in range(2):
+        for x in range(2):
+            for y in range(2):
+                for z in range(2):
+                    f = (x and y and (not(z))) or ((not(w)) and y and z)
+                    if f:
+                        print(w, x, y ,z)
+task2_23955_7()

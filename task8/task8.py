@@ -36,4 +36,30 @@ def task8_19240_4(): #6406
             m.append([n, i])   
         n += 1
     print(max(m))    
-task8_19240_4()
+
+def task8_MMigunov2026_5(): #-296785
+    c = 1
+    att_i = 0
+    l = 0
+    for i in map(''.join, product(sorted('тесак'), repeat=8)):
+        f = 'тт' not in i and 'ее' not in i\
+    and 'сс' not in i and 'аа' not in i\
+        and 'кк' not in i
+        if i == 'аттестат':
+            att_i = c
+        if 'тесак' in i and f:
+            l = c
+            print(att_i - l)
+        c += 1
+    else:
+        print('--------------')
+        print(att_i - l)
+def task8_23961_6(): #2499
+    c = 1
+    for i in map(''.join, product(sorted('КОТИА'), repeat=5)):
+        if c % 2 != 0 and (i[0] != 'К' and i[0] != 'Т') and i.count('О') == 2:
+            print(c)
+        c += 1
+    else:
+        print('----------') 
+task8_23961_6()

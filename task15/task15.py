@@ -61,4 +61,10 @@ def task15_19247_8(): # 54
         if all(task15_19247_8_func(A, x, y) for x in range(1, 501) for y in range(1, 501)):
             print(A)
             break
+
+def task15_MMigunov2026_9():
+    z = [x for x in range(27, 50)]
+    o = [x for x in range(39, 61)]
+    v = [x for x in range(30, 56)]
+    f = z <= ((not(o) and not(a)) <= (not(z) and v))
 task15_19247_8()

@@ -48,4 +48,24 @@ def task7_19239_5(): # 292
     print(memb, max_memb*5)
     print('-----')
     print(c % ((max_memb) // (size * i)))
-task7_19239_5()
+
+def task7_MMigunov_6(): #1395
+    size = 3840*2160
+    i = 23
+    size_c = 2560*1440
+    i_c = 20
+    c = 100
+    res1 = size * i 
+    res2 = size_c * i_c
+    print(int(((res1 - res2) * c) / 8 / 1024 / 1024))
+
+def task7_23960_7(): #242850
+    size = 1600 * 1200
+    i = 24
+    size_c = 1024 * 768
+    i_c = 8
+    c = 50
+    res1 = size*i
+    res2 = size_c * i_c
+    print(((res1-res2) * c)/ 8/ 1024)
+task7_23960_7()

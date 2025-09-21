@@ -37,4 +37,43 @@ def task6_19238_2():
          for y in range(0, 17):
               goto(x*l, y * l)
               dot(3, 'red')
-task6_19238_2()
+
+def task6_MMigunov2026_3(): #36
+    l = 15
+    lt(90)
+    speed(50000)
+
+    for _ in range(2):
+         fd(3*l); rt(90); fd(20*l); rt(90)
+    up()
+    backward(8*l); rt(90); fd(9*l);lt(90)
+    down()
+    for _ in range(2):
+         fd(16*l); rt(90); fd(8*l); rt(90)
+    up()    
+    for x in range(0, 30):
+        for y in range(-10, 10):
+             goto(x*l, y*l)
+             dot(3, 'red')
+    tracer()
+    done()
+
+def task6_23959_4(): #330
+    l = 15
+    lt(90)
+    speed(5000)
+    for _ in range(2):
+        fd(20*l); lt(270); backward(15*l); rt(90)
+    up()
+    fd(10*l); rt(90); backward(20*l); lt(90)
+    down()
+    for _ in range(2):
+        fd(6*l); rt(90); fd(6*l); rt(90)
+    up()
+    for x in range(-20, 10):
+         for y in range(0, 30):
+              goto(x*l, y*l)
+              dot(3, 'red')
+    tracer()
+    done()
+task6_23959_4()

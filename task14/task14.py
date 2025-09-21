@@ -1,6 +1,6 @@
 from string import printable
 
-def sys(s, c):
+def sys(s: int, c: int)->str: 
     res = ''
     while s > 0:
         res = str(s % c) + res
@@ -31,4 +31,22 @@ def task14_23560_3(): # 266249847
         a = int(f'11353{x}12', 25) + int(f'135{x}21', 25)
         if a % 24 == 0:
             print(x, a // 24)
-task14_23560_3()
+
+def task14_MMigunov2026_4(): #614
+    s = -100
+    xs = 0
+    for x in range(1, 1078):
+        n = 7 ** 77 + 7 ** 33 - x
+        if str(n).count('0') > s:
+            s = str(n).count('0')
+            xs = x
+    print(s, xs)     
+
+def task14_23967_5():
+    for x in range(1, 5001):
+        p = 7 * 13 ** 180 + 5 * 13 ** 120 - x
+        n = sys(p, 13)
+        if n.count('0') == 60:
+            print(x)
+task14_23967_5()
+
