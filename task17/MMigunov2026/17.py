@@ -1,4 +1,4 @@
-# ANSWER: 13 801833
+# ANSWER: 13 801833 (wrong)
 
 with open('task17/MMigunov2026/17.txt') as file:
     data = [int(x) for x in file.readlines()]
