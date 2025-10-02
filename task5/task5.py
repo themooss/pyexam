@@ -90,4 +90,14 @@ def task5_23958_7(): #7
         r = int(b, 2)
         if r >= 50:
             print(n, r)
-task5_23958_7()
+def task5_DBahtiev_8(): # 30
+    for n in range(1, 1001):
+        t = sys(n, 3)
+        if n % 5 == 0:
+            t = t + t[-2:]
+        else:
+            t = t + sys(((n%5) * 7), 3)
+        r = int(t, 3)
+        if r <= 273:
+            print(r, n)
+task5_DBahtiev_8()

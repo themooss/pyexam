@@ -62,4 +62,15 @@ def task8_23961_6(): #2499
         c += 1
     else:
         print('----------') 
-task8_23961_6()
+
+def task8_DBahtiev_7(): #24351
+    n = 1
+    r = 0
+    for i in map(''.join, product(sorted('БУРАТИНО'),repeat=5)):
+        f1 = len(i) == len(set(i))
+        f2 = i[0] not in ['У', 'А', 'И', 'О'] and i[-1] not in ['У', 'А', 'И', 'О']
+        if f1 and f2 and n % 2 != 0:
+            print(n)
+        n += 1
+    print(r)
+task8_DBahtiev_7()

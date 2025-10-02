@@ -66,5 +66,12 @@ def task15_MMigunov2026_9():
     z = [x for x in range(27, 50)]
     o = [x for x in range(39, 61)]
     v = [x for x in range(30, 56)]
-    f = z <= ((not(o) and not(a)) <= (not(z) and v))
-task15_19247_8()
+    f = z <= ((not(o) and not(o)) <= (not(z) and v))
+
+def task15_DBahtiev2026_10_f(A, x, y):
+    return (2 * x * y > A) or (y < x) or (x < 15)
+def task15_DBahtiev2026_10(): #449
+    for A in range(1, 1000):
+        if all(task15_DBahtiev2026_10_f(A, x, y) for x in range(1, 1000) for y in range(1, 1000)):
+            print(A)
+task15_DBahtiev2026_10()

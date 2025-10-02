@@ -52,4 +52,13 @@ def task11_23964_6(): #8193
         if mem >= c * l * i:
             print(i)
     print(2 ** 13 + 1)
-task11_23964_6()
+
+def task11_LShastin2026_7(): #53819
+    a = 10 + 52 + 454
+    i = 10
+    c = 31_922
+    mem = 2 * 1024 * 1024 * 1024 * 8
+    for x in range(100000, 1, -1):
+        if i * c * x > mem:
+            print(x)
+task11_LShastin2026_7()

@@ -48,4 +48,11 @@ def task16_23969_6_G(n):
 def task16_23969_6_F(n): #24732
     return 3 * (task16_23969_6_G(n-4) + 5)
 
-print(task16_23969_6_F(12345))
+def task16_DBahtiev2026_7_G(n): #66503
+    if n >= 30000:
+        return 3
+    if n < 30000:
+        return task16_DBahtiev2026_7_G(n+3) + 7
+def task16_DBahtiev2026_7_F(n):
+    return task16_DBahtiev2026_7_G(n+1)
+print(task16_DBahtiev2026_7_F(1500))

@@ -19,4 +19,10 @@ def task13_23966_4(): #172.47.255.254 -> 17247255254
     network = ip_network('172.45.129.10/255.240.0.0', 0)
     for i in network:
         print(i)
-task13_23966_4()
+
+def task13_DBahtiev2026_5(): # 11
+    for i in ip_network('150.122.11.21/255.255.254.0', 0):
+        print(i)
+        print(bin(150)[2:], bin(122)[2:], bin(10)[2:], bin(0)[2:])
+        break
+task13_DBahtiev2026_5()

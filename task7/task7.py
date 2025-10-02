@@ -68,4 +68,16 @@ def task7_23960_7(): #242850
     res1 = size*i
     res2 = size_c * i_c
     print(((res1-res2) * c)/ 8/ 1024)
-task7_23960_7()
+
+def task7_DBahtiev_8(): #12.8 -> 12
+    ch = 4
+    d = 32_000
+    i = 64
+    ch_c = 2
+    d_c = 16000
+    i_c = 20
+    memo = (ch*d*i)
+    memc = (ch_c *d_c * i_c)
+    print(memo, memc)
+    print(memo // memc)
+task7_DBahtiev_8()

@@ -1,4 +1,7 @@
 from string import printable
+from sys import set_int_max_str_digits
+
+set_int_max_str_digits(10000)
 
 def sys(s: int, c: int)->str: 
     res = ''
@@ -48,5 +51,9 @@ def task14_23967_5():
         n = sys(p, 13)
         if n.count('0') == 60:
             print(x)
-task14_23967_5()
 
+def task14_LShastin2026_6(): #20
+    n = 5 * 729 ** 2024 + 3 * 243*1413 - 7 * 81 **169 - 2 * 9**107 + 3017
+    print(int(sys(n, 27)) // 26)
+    print(sum(int(i) for i in '2100000000000000000000000000000000000000000000000000000000000000000012513320'))
+task14_LShastin2026_6()
