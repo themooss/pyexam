@@ -61,4 +61,15 @@ def task11_LShastin2026_7(): #53819
     for x in range(100000, 1, -1):
         if i * c * x > mem:
             print(x)
-task11_LShastin2026_7()
+
+
+def task11_24062_8(): # 9 -> 2**9 == 256 -> 256+1 = 257
+    l = 3425
+    c = 2_718_281
+    mem = 9 * 1024 * 1024 * 1024 * 8
+    for i in range(1, 20):
+        if mem <= l * i * c:
+            print(f'{i=}, mem={i*c*l}, {mem <= l * i * c}')
+            break
+task11_24062_8()
+print(9 * 2**33)

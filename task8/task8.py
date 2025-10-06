@@ -73,4 +73,12 @@ def task8_DBahtiev_7(): #24351
             print(n)
         n += 1
     print(r)
-task8_DBahtiev_7()
+
+def task8_24061_8(): # 547
+    n = 1
+    for i in map(''.join, product(sorted('компьютер'), repeat=5)):
+        if n % 2 != 0 and i[0] != 'о' and i[0] != 'к' and i.count('т') >= 3:
+            print(n)
+            break
+        n += 1
+task8_24061_8()

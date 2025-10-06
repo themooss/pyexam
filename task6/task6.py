@@ -96,4 +96,26 @@ def task6_DBahtiev_5():
             dot(3, 'red')
     tracer()
     done()
-task6_DBahtiev_5()
+
+
+def task6_24060_6(): # 48
+    lt(90)
+    l = 8
+    speed(5000)
+
+    for _ in range(3):
+        fd(25 * l); lt(90); fd(30*l); lt(90)
+    up()
+    fd(20*l); rt(90); backward(7 * l); lt(90)
+    down()
+
+    for _ in range(3):
+        fd(60*l); rt(90); fd(30*l); rt(90)
+    up()
+    for x in range(-30, 20):
+        for y in range(-20, 20):
+            goto(x*l, y*l)
+            dot(3, 'red')
+    tracer()
+    done()
+task6_24060_6()

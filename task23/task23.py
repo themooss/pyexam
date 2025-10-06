@@ -60,3 +60,9 @@ def task23_20967_10(x, y):  # 9540
     if x <= y or x == 15:
         return x == y
     return task23_20967_10(x - 2, y) + task23_20967_10(x - 3, y) + task23_20967_10(x // 3, y)
+
+
+def task23_24083_11(x, y):  # 4
+    if x <= y or x == 8:
+        return x == y
+    return task23_24083_11(x-2, y) + task23_24083_11(x-5, y) + task23_24083_11(x // 4, y)
