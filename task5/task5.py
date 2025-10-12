@@ -121,3 +121,15 @@ def task2_24059_9():  # 5
         if r > 130:
             print(r, n)
             break
+def task5_24223_10(): # 25
+    for n in range(1, 1001):
+        b = bin(n)[2:]
+        if n % 2 != 0:
+            b = b[-1] + b[1:-1] + b[0] + '0'
+        else:
+            b = b + '0'
+        r = int(b, 2)
+        if r >= 50:
+            print(r, n)
+            break
+task5_24223_10()

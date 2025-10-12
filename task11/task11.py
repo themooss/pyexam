@@ -71,5 +71,15 @@ def task11_24062_8(): # 9 -> 2**9 == 256 -> 256+1 = 257
         if mem <= l * i * c:
             print(f'{i=}, mem={i*c*l}, {mem <= l * i * c}')
             break
-task11_24062_8()
-print(9 * 2**33)
+
+
+def task11_24229_9(): #8193
+    l = 120
+    c = 50_000
+    mem = 10 * 1024 * 1024
+    for i in range(1, 20):
+        if mem <= c * l * i // 8:
+            print(i, 2**i+1)
+            print(mem <= 13 * c * l)
+
+task11_24229_9()

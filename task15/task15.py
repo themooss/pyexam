@@ -108,4 +108,11 @@ def task15_24066_11():  # 21
             print(A)
 
 
-task15_24066_11()
+def task15_24233_12_F(A, x, y): # 25
+    return (3 * x + y != 96) or (x <= y) or (A <= x)
+
+def task15_24233_12():
+    for A in range(0, 500):
+        if all(task15_24233_12_F(A, x, y) for x in range(0, 500) for y in range(0, 500)):
+            print(A)
+task15_24233_12()

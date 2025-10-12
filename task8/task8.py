@@ -74,6 +74,7 @@ def task8_DBahtiev_7(): #24351
         n += 1
     print(r)
 
+
 def task8_24061_8(): # 547
     n = 1
     for i in map(''.join, product(sorted('компьютер'), repeat=5)):
@@ -81,4 +82,12 @@ def task8_24061_8(): # 547
             print(n)
             break
         n += 1
-task8_24061_8()
+
+
+def task8_24226_9():
+    n = 1
+    for i in map(''.join, product(sorted('КОТА'), repeat=5)):
+        if i.count('А') == 2 :
+            print(n)
+        n += 1
+task8_24226_9()
