@@ -111,8 +111,17 @@ def task15_24066_11():  # 21
 def task15_24233_12_F(A, x, y): # 25
     return (3 * x + y != 96) or (x <= y) or (A <= x)
 
-def task15_24233_12():
+def task15_24233_12(): # 25
     for A in range(0, 500):
         if all(task15_24233_12_F(A, x, y) for x in range(0, 500) for y in range(0, 500)):
             print(A)
-task15_24233_12()
+
+
+def task15_24106_13_F(A, x, y):
+    return (2 * x * y > A) or (y < x) or (x < 15)
+
+def task15_24106_13(): # 449
+    for A in range(1, 1000):
+        if all(task15_24106_13_F(A, x, y) for x in range(1, 1000) for y in range(1, 1000)):
+            print(A)
+task15_24106_13()

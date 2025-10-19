@@ -68,11 +68,13 @@ def task23_24083_11(x, y):  # 4
     return task23_24083_11(x-2, y) + task23_24083_11(x-5, y) + task23_24083_11(x // 4, y)
 
 
-def task23_24239_12(x, y):
+def task23_24239_12(x, y):  # 49943
     if x >= y:
         return x == y
     return task23_24239_12(x+1, y) + task23_24239_12(x + 2, y) + task23_24239_12(x * 3, y)
-print(task23_24239_12(1, 7) * task23_24239_12(7, 25))
-print(task23_24239_12(1, 10) * task23_24239_12(10, 25))
-print(task23_24239_12(1, 7) * task23_24239_12(7, 10) * task23_24239_12(10, 25))
-print(task23_24239_12(1, 7) * task23_24239_12(10, 25))
+
+
+def task23_24076_13(x, y):  # 596
+    if x <= y or x == 22:
+        return x == y
+    return task23_24076_13(x-2, y) + task23_24076_13(x-5, y) + task23_24076_13(x // 2, y)

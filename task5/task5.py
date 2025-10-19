@@ -132,4 +132,15 @@ def task5_24223_10(): # 25
         if r >= 50:
             print(r, n)
             break
-task5_24223_10()
+
+def task5_24100_11(): # 30
+    for n in range(1, 1001):
+        t = sys(n, 3)
+        if n % 5 == 0:
+            t = t + t[-2:]
+        else:
+            t = t + sys(((n%5) * 7), 3)
+        r = int(t, 3)
+        if r <= 273:
+            print(f'{n=}, {r=}')
+task5_24100_11()

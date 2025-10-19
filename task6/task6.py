@@ -17,7 +17,7 @@ def task6_1():
             dot(3, 'red')
             up()
 
-def task6_19238_2():
+def task6_19238_2(): # 187
     l = 10
     left(90)
     speed(50000)
@@ -137,4 +137,25 @@ def task6_24224_7():
             dot(3, 'red')
     tracer()
     done()
-task6_24224_7()
+
+
+def task6_24101_8(): # 840
+    lt(90)
+    l = 15
+    speed(5000)
+
+    for _ in range(5):
+        fd(42*l); rt(270); fd(55*l); lt(90)
+    up()
+    fd(17*l); rt(90); fd(12*l); lt(90)
+    down()
+    for _ in range(14):
+        fd(14*l); lt(90); fd(200*l); lt(90)
+    up()
+    for x in range(-60, 60):
+        for y in range(0, 27):
+            goto(x*l, y*l)
+            dot(3, 'red')
+    tracer()
+    done()
+task6_24101_8()

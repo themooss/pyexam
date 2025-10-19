@@ -1,6 +1,6 @@
 #ANSWER: 42
 
-for line in open('24227'):
+for line in open('24227.txt'):
     a = [int(x) for x in line.split()]
     np = [x for x in a if a.count(x) == 1]
     chn = [x for x in a if x % 2 == 0]

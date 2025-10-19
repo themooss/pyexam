@@ -1,76 +1,97 @@
 from sys import setrecursionlimit, set_int_max_str_digits
-from functools import lru_cache
-#this is my practise file of task number 16
+
+# this is my practise file of task number 16
 setrecursionlimit(1000000)
 set_int_max_str_digits(100000)
+
 
 def task16_23426_1_G(n):
     if n <= 20:
         return n
     if n > 20:
-        return task16_23426_1_G(n-2) + 1
+        return task16_23426_1_G(n - 2) + 1
+
 
 def task16_23426_1_F(n):
-    return task16_23426_1_G(n-3)
+    return task16_23426_1_G(n - 3)
+
 
 def task16_21415_2_F(n):
     if n <= 5:
         return 1
     if n > 5:
-        return n + task16_21415_2_F(n-2)
+        return n + task16_21415_2_F(n - 2)
+
 
 def task16_23562_3_G(n):
     if n <= 9:
-        return 3*n
+        return 3 * n
     if n > 9:
-        return task16_23562_3_G(n-2) + 1
+        return task16_23562_3_G(n - 2) + 1
 
-def task16_23562_3_F(n): # 24017
-    return task16_23562_3_G(n-1)
 
-def task16_19248_4_F(n): #757543052
+def task16_23562_3_F(n):  # 24017
+    return task16_23562_3_G(n - 1)
+
+
+def task16_19248_4_F(n):  # 757543052
     if n < 5:
         return n
     if n >= 5:
-        return 2 * n * task16_19248_4_F(n-4)
+        return 2 * n * task16_19248_4_F(n - 4)
+
 
 def task16_MMigunov2026_5_F(n):
     if n >= 9876:
         return task16_MMigunov2026_5_F(n + 777)
     if n < 9876:
-        return n * 2 + task16_MMigunov2026_5_F(n+2)
+        return n * 2 + task16_MMigunov2026_5_F(n + 2)
+
 
 def task16_23969_6_G(n):
     if n < 8:
-        return 3*n
-    if n >=8:
-        return task16_23969_6_G(n-3)+2
+        return 3 * n
+    if n >= 8:
+        return task16_23969_6_G(n - 3) + 2
 
-def task16_23969_6_F(n): #24732
-    return 3 * (task16_23969_6_G(n-4) + 5)
 
-def task16_DBahtiev2026_7_G(n): #66503
+def task16_23969_6_F(n):  # 24732
+    return 3 * (task16_23969_6_G(n - 4) + 5)
+
+
+def task16_DBahtiev2026_7_G(n):  # 66503
     if n >= 30000:
         return 3
     if n < 30000:
-        return task16_DBahtiev2026_7_G(n+3) + 7
+        return task16_DBahtiev2026_7_G(n + 3) + 7
 
 
 def task16_DBahtiev2026_7_F(n):
-    return task16_DBahtiev2026_7_G(n+1)
+    return task16_DBahtiev2026_7_G(n + 1)
+
+
 print(task16_DBahtiev2026_7_F(1500))
 
 
-def task16_24064_8_F(n): # 39180999964189790209830417 ?????
+def task16_24064_8_F(n):  # 39180999964189790209830417 ?????
     if n <= 3:
         return n + 3
     if n > 3:
-        return (task16_24064_8_F(n-1) + 2 * task16_24064_8_F(n-2)) - task16_24064_8_F(n-3)
+        return (task16_24064_8_F(n - 1) + 2 * task16_24064_8_F(n - 2)) - task16_24064_8_F(n - 3)
 
-def task16_24234_9(n): #1605511072
+
+def task16_24234_9(n):  # 1605511072
     if n < 15:
         return n
-    if n>=15:
-        return (n-8) * task16_24234_9(n-6)
-print((task16_24234_9(40200) - (240 * task16_24234_9(40194)))\
-      / task16_24234_9(40188))
+    if n >= 15:
+        return (n - 8) * task16_24234_9(n - 6)
+
+
+def task16_24114_10_G(n):  # 66503
+    if n >= 30000:
+        return 3
+    return task16_24114_10_G(n + 3) + 7
+
+
+def task16_24114_10_F(n):
+    return task16_24114_10_G(n + 1)

@@ -94,4 +94,16 @@ def task7_24225_10(): # 48
     speedb = 67_108_864
 
     print((mem * 0.65) / speedb)
-task7_24225_10()
+
+
+def task7_24102_11(): # 12.8 -> 12
+    ch = 4
+    discr = 32_000
+    i = 64
+    ch_i = 2
+    discr_i = 16_000
+    i_i = 20
+    mem1 = ch * discr * i * 1
+    mem2 = ch_i * discr_i * i_i * 1
+    print(mem1 / mem2)
+task7_24102_11()
