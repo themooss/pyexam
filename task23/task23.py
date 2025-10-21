@@ -78,3 +78,10 @@ def task23_24076_13(x, y):  # 596
     if x <= y or x == 22:
         return x == y
     return task23_24076_13(x-2, y) + task23_24076_13(x-5, y) + task23_24076_13(x // 2, y)
+
+
+def task23_2477_14(x, y):
+    if x >= y or x == 30:
+        return x == y
+    return task23_2477_14(x+1, y) + task23_2477_14(x*3, y) + task23_2477_14(x*4, y)
+print(task23_2477_14(2, 15) * task23_2477_14(15, 100))

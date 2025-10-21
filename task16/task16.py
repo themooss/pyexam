@@ -70,9 +70,6 @@ def task16_DBahtiev2026_7_F(n):
     return task16_DBahtiev2026_7_G(n + 1)
 
 
-print(task16_DBahtiev2026_7_F(1500))
-
-
 def task16_24064_8_F(n):  # 39180999964189790209830417 ?????
     if n <= 3:
         return n + 3
@@ -95,3 +92,10 @@ def task16_24114_10_G(n):  # 66503
 
 def task16_24114_10_F(n):
     return task16_24114_10_G(n + 1)
+
+
+def task16_18123_11(n):
+    if n >= 2010:
+        return n
+    if n < 2010:
+        return (task16_18123_11(n+3) + task16_18123_11(n+2) + task16_18123_11(n + 1))

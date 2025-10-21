@@ -142,7 +142,7 @@ def task6_24224_7():
 def task6_24101_8(): # 840
     lt(90)
     l = 15
-    speed(5000)
+    speed(100000)
 
     for _ in range(5):
         fd(42*l); rt(270); fd(55*l); lt(90)
