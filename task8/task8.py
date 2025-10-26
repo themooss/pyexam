@@ -110,4 +110,16 @@ def task8_24103_8():  # 28515
         n += 1
 
 
-task8_24103_8()
+def task8_23808_9():  # 270297
+    n = 1
+    res = []
+    for i in map(''.join, product(sorted('котена'), repeat=7)):
+        if i.count('к') == 2 and i.count('о') == 2 and i.count('т') == 1 and i.count('е') == 1 \
+                and i.count('н') == 1 and i.count('а') == 0:
+            res.append(n)
+        n += 1
+    else:
+        print(max(x for x in res if x % 2 != 0))
+
+
+task8_23808_9()

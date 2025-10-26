@@ -87,4 +87,16 @@ def task14_24073_9():  # 60
     print(len(sys(n, 27)))
 
 
-task14_24073_9()
+def task14_24048_10_f(s, p):
+    s = s[::-1]
+    return sum(int(s[i], 36) * p ** i for i in range(len(s)))
+
+
+def task14_24048_10():  # 1529685
+    for p in range(10, 10000):
+        if (task14_24048_10_f('KOT', p) + task14_24048_10_f('GOLODNI', p)) \
+                == (task14_24048_10_f('MEEOW', p) * task14_24048_10_f('100', p)) - 20194023088:
+            print(task14_24048_10_f('purr', p))
+
+
+task14_24048_10()
