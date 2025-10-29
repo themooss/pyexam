@@ -143,4 +143,17 @@ def task5_24100_11(): # 30
         r = int(t, 3)
         if r <= 273:
             print(f'{n=}, {r=}')
-task5_24100_11()
+
+
+def task5_iglin_12():  # 40
+    for n in range(7, 1000):
+        b = bin(n)[2:]
+        if b.count('1') % 3 == 0:
+            b = b + b[-2:]
+        else:
+            b = b + bin((int(b) % 3) * 3)[2:]
+        r = int(b, 2)
+        if r >= 300:
+            print(n)
+            break
+task5_iglin_12()

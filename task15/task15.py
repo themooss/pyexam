@@ -32,9 +32,6 @@ def task15_23274_3():  # Основная волна 11.06.25 (Уровень: �
             print(A)  # 36
 
 
-task15_23274_3()
-
-
 def task15_23199_4_func(A, x, y):
     return (x * y > A) or (x > y) or (11 > x)
 
@@ -138,4 +135,17 @@ def task15_1057_14():
         if all(task15_1057_14_F(A, x) for x in range(1, 1000)):
             print(A)
             break
-task15_1057_14()
+
+
+def task15_iglin_15_f(A, x):
+    return (x % A == 0) or (not(x in [i for i in range(30, 83)]) or not(x % 41 == 0))
+
+
+def task15_iglin_15():
+    s1 = [i for i in range(1, 31)]
+    s2 = [i for i in range(83, 1000)]
+    s3 = s1 + s2
+    for A in range(1, 100000):
+        if all(task15_iglin_15_f(A, x) for x in range(1, 1000)):
+            print(A)
+task15_iglin_15()

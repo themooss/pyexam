@@ -80,8 +80,14 @@ def task23_24076_13(x, y):  # 596
     return task23_24076_13(x-2, y) + task23_24076_13(x-5, y) + task23_24076_13(x // 2, y)
 
 
-def task23_2477_14(x, y):
+def task23_2477_14(x, y):  # 182
     if x >= y or x == 30:
         return x == y
     return task23_2477_14(x+1, y) + task23_2477_14(x*3, y) + task23_2477_14(x*4, y)
-print(task23_2477_14(2, 15) * task23_2477_14(15, 100))
+
+
+def task23_iglin_15(x, y):
+    if x <= y:
+        return x == y
+    return task23_iglin_15(x-3, y) + task23_iglin_15(x-2, y) + task23_iglin_15(x // 5, y)
+print(task23_iglin_15(56, 10) * task23_iglin_15(10, 6) * task23_iglin_15(6, 1))

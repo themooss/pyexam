@@ -177,3 +177,16 @@ def task14_19880_18():  # 25
         A.append(n % 25)
         n //= 25
     print(A.count(0))
+
+
+def task14_lashin_19():  # 4
+    n = 30 ** 30 + 443 * 900 ** 14 + 76 * 2700 ** 12 - 81000 ** 9
+    c = 0
+    while n > 0:
+        ost = n % 30
+        if ost > 15:
+            c += 1
+        n //= 30
+    print(c)
+
+task14_lashin_19()

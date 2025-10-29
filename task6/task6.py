@@ -158,4 +158,22 @@ def task6_24101_8(): # 840
             dot(3, 'red')
     tracer()
     done()
-task6_24101_8()
+
+
+def task6_lashin_9():  # 11
+    lt(90)
+    l = 20
+    speed(5000)
+
+    rt(173)
+    for _ in range(200):
+        fd(1*l); lt(30)
+
+    up()
+    for x in range(0, 20):
+        for y in range(-5, 5):
+            goto(x*l, y*l)
+            dot(3, 'red')
+    tracer()
+    done()
+task6_lashin_9()

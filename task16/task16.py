@@ -99,3 +99,10 @@ def task16_18123_11(n):
         return n
     if n < 2010:
         return (task16_18123_11(n+3) + task16_18123_11(n+2) + task16_18123_11(n + 1))
+
+
+def task16_lashin_12(n):  # 66048
+    if n < 10:
+        return n + 10
+    return task16_lashin_12(n-8) + 2 ** n
+print((task16_lashin_12(4000) + 2 * task16_lashin_12(3992)) / task16_lashin_12(3984))

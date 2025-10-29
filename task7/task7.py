@@ -106,4 +106,13 @@ def task7_24102_11(): # 12.8 -> 12
     mem1 = ch * discr * i * 1
     mem2 = ch_i * discr_i * i_i * 1
     print(mem1 / mem2)
-task7_24102_11()
+
+
+def task7_iglin_12():
+    ch = 2
+    memmb = 70
+    ch_i = 4
+    d = 5
+    comp = 0.75
+
+    print()

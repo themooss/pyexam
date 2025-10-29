@@ -57,4 +57,15 @@ def task13_24105_8(): # 12
         print(i) # должно быть 150.122.10.1
         print((bin(150)[2:]+ bin(122)[2:]+ bin(10)[2:]+ bin(1)[2:]).count('1'))
         break
-task13_24105_8()
+
+
+def task13_iglin_9():  # 202.71.127.254 -> 20271127254
+    for i in ip_network('202.71.92.91/255.255.192.0', 0):
+        x = bin(int(i))[2:]
+        x1 = x[:8]
+        x2 = x[8:16]
+        x3 = x[16:24]
+        x4 = x[24:32]
+        if int(int(x1) % 2 != 0) + int(int(x2) % 2 != 0) + int(int(x3) % 2 != 0) + int(int(x4) % 2 != 0) == 2:
+            print(i)
+task13_iglin_9()

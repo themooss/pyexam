@@ -122,4 +122,12 @@ def task8_23808_9():  # 270297
         print(max(x for x in res if x % 2 != 0))
 
 
-task8_23808_9()
+def task8_lashin_10():  # 152724
+    s = 0
+    n = 1
+    for i in map(''.join, product(sorted('творилка'), repeat=6)):
+        if i == 'виктор' or i == 'кирилл':
+            s += n
+            print(i, n)
+        n += 1
+    print(s)
